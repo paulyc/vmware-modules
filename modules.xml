@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<modules>
+  <module name="vmmon" required="true" key="" description="Virtual Machine Monitor"/>
+  <module name="vmnet" required="false" key="NETWORKING" description="Virtual Network Device"/>
+  <module name="vmci" required="false" key="VMCI_CONFED" description="Virtual Machine Communication Interface"/>
+  <module name="vsock" required="false" key="VSOCK_CONFED" description="vSockets">
+    <dependencies>
+      <dependency name="vmci"/>
+    </dependencies>
+  </module>
+</modules>
